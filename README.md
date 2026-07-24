@@ -13,7 +13,7 @@ The EDA focuses on the PhysioNet EEG Motor Movement/Imagery Database (EEGMMIDB).
 **EDA Visualizations:**
 Here are some sample visualizations extracted from our EDA notebook:
 
-![EDA Visualization 1](images/eda_1.png)
+![Topographic Map](images/topomap.png)
 ![EDA Visualization 2](images/eda_2.png)
 
 *Note: TASK-2 and TASK-3 will be uploaded later.*
