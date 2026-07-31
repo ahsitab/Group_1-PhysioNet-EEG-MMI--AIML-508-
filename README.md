@@ -33,7 +33,7 @@ The initial phase focuses on deeply exploring the **PhysioNet EEG Motor Movement
 - **Scope:** Analyzes motor execution runs (left/right fist) alongside motor imagery runs to identify signal patterns.
 - **Techniques:** Signal filtering, epoching, and robust visualizations to lay the groundwork for our downstream machine learning classification tasks.
 
-### 🖼️ Visual Insights
+### 🖼️ Visual Insights (Task 1)
 Here are some of the key visual findings extracted from our EDA notebook. These visualizations help us understand the spatial and temporal distributions of the EEG signals.
 
 <details open>
@@ -42,31 +42,64 @@ Here are some of the key visual findings extracted from our EDA notebook. These 
 
 | **Topographic Brain Mapping** | **Channel Activity Analysis** |
 | :---: | :---: |
-| <img src="images/topomap.png" alt="Topographic Map" width="400"/> | <img src="images/eda_2.png" alt="EDA Visualization 2" width="400"/> |
+| <img src="images/Task1/topomap.png" alt="Topographic Map" width="400"/> | <img src="images/Task1/eda_2.png" alt="EDA Visualization 2" width="400"/> |
 
 | **Signal Distributions** | **Temporal Features** |
 | :---: | :---: |
-| <img src="images/eda_3.png" alt="EDA Visualization 3" width="400"/> | <img src="images/eda_4.png" alt="EDA Visualization 4" width="400"/> |
+| <img src="images/Task1/eda_3.png" alt="EDA Visualization 3" width="400"/> | <img src="images/Task1/eda_4.png" alt="EDA Visualization 4" width="400"/> |
 
 | **Frequency Domains** | **Spectral Density** |
 | :---: | :---: |
-| <img src="images/eda_5.png" alt="EDA Visualization 5" width="400"/> | <img src="images/eda_6.png" alt="EDA Visualization 6" width="400"/> |
+| <img src="images/Task1/eda_5.png" alt="EDA Visualization 5" width="400"/> | <img src="images/Task1/eda_6.png" alt="EDA Visualization 6" width="400"/> |
 
 </details>
 
-> ⚠️ *Note: **TASK-2** and **TASK-3** methodologies and results will be uploaded in subsequent updates.*
+---
+
+## 🚀 TASK-2: Motor Movement Classification
+
+### 🧠 Classification Summary
+Building upon the insights from our EDA, Task 2 focuses on constructing robust machine learning models to classify motor movements using the EEG signals. We explore both baseline deep learning approaches (1D CNN) and advanced Spatio-Temporal Graph Neural Networks (ST-GNN) to capture the complex spatial correlations and temporal dynamics inherent in EEG data.
+
+### 🖼️ Model & Performance Visual Insights (Task 2)
+These visualizations illustrate the data processing, model architectures, and training evaluation results for our classification models.
+
+<details open>
+<summary><b>View Visualizations</b></summary>
+<br>
+
+| **ERD/ERS Topomaps** | **Class Distribution** |
+| :---: | :---: |
+| <img src="images/Task2/erd_ers_topomaps.png" alt="ERD ERS Topomaps" width="400"/> | <img src="images/Task2/class_distribution.png" alt="Class Distribution" width="400"/> |
+
+| **Brain Graph** | **Normalized Adjacency** |
+| :---: | :---: |
+| <img src="images/Task2/brain_graph.png" alt="Brain Graph" width="400"/> | <img src="images/Task2/normalized_adjacency.png" alt="Normalized Adjacency" width="400"/> |
+
+| **ST-GNN Architecture Diagram** | **Hybrid ST-GNN Test Confusion Matrix** |
+| :---: | :---: |
+| <img src="images/Task2/stgnn_architecture_diagram.png" alt="ST-GNN Architecture Diagram" width="400"/> | <img src="images/Task2/hybrid_stgnn_test_confusion_matrix.png" alt="Hybrid ST-GNN Test Confusion Matrix" width="400"/> |
+
+| **1D CNN Learning Curve** | **Hybrid ST-GNN Learning Curve** |
+| :---: | :---: |
+| <img src="images/Task2/1d_cnn_learning_curve.png" alt="1D CNN Learning Curve" width="400"/> | <img src="images/Task2/hybrid_st_gnn_learning_curve.png" alt="Hybrid ST-GNN Learning Curve" width="400"/> |
+
+</details>
+
+> ⚠️ *Note: **TASK-3** and **TASK-4** methodologies and results will be uploaded in subsequent updates.*
 
 ---
 
 ## 💻 How to Run
-All execution scripts and notebooks are located in the `code/` directory. Navigate to specific task folders to reproduce our findings.
+All execution scripts, models, and notebooks are located in the `code/`, `models/`, and `report/` directories. Navigate to specific task folders to reproduce our findings.
 
 ```bash
-# Example for running EDA
+# Example for running EDA (Task 1)
 jupyter notebook code/task1/Group01_PhysioNet_EEG_MMI_task1_eda.ipynb
 ```
 
 ---
 
 ## 📈 Results
-*To Be Determined (TBD)*
+* Our Hybrid ST-GNN effectively classifies motor tasks by capturing both spatial dependencies (via GCNs) and temporal features (via CNNs/LSTMs).
+* See the confusion matrix and learning curves in the visualizations section for specific performance metrics.
