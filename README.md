@@ -103,3 +103,30 @@ jupyter notebook code/task1/Group01_PhysioNet_EEG_MMI_task1_eda.ipynb
 ## 📈 Results
 * Our Hybrid ST-GNN effectively classifies motor tasks by capturing both spatial dependencies (via GCNs) and temporal features (via CNNs/LSTMs).
 * See the confusion matrix and learning curves in the visualizations section for specific performance metrics.
+
+<div align="center">
+
+### Model Performance Metrics
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Model</th>
+      <th align="center">Test Accuracy</th>
+      <th align="center">Precision (Macro)</th>
+      <th align="center">Recall (Macro)</th>
+      <th align="center">F1-Score (Macro)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><b>Hybrid ST-GNN</b></td>
+      <td align="center">50.99%</td>
+      <td align="center">0.5100</td>
+      <td align="center">0.5090</td>
+      <td align="center">0.4975</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
