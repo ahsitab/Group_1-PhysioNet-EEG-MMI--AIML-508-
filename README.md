@@ -120,6 +120,83 @@ jupyter notebook code/task1/Group01_PhysioNet_EEG_MMI_task1_eda.ipynb
   </thead>
   <tbody>
     <tr>
+      <td align="center"><b>1D-CNN</b></td>
+      <td align="center">65.96%</td>
+      <td align="center">0.6596</td>
+      <td align="center">0.6596</td>
+      <td align="center">0.6596</td>
+    </tr>
+    <tr>
+      <td align="center"><b>XGBoost</b></td>
+      <td align="center">64.27%</td>
+      <td align="center">0.6426</td>
+      <td align="center">0.6426</td>
+      <td align="center">0.6426</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Random Forest</b></td>
+      <td align="center">64.27%</td>
+      <td align="center">0.6429</td>
+      <td align="center">0.6425</td>
+      <td align="center">0.6423</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Motor-area CSP-LDA</b></td>
+      <td align="center">64.12%</td>
+      <td align="center">0.6412</td>
+      <td align="center">0.6412</td>
+      <td align="center">0.6412</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Extra Trees</b></td>
+      <td align="center">63.84%</td>
+      <td align="center">0.6393</td>
+      <td align="center">0.6382</td>
+      <td align="center">0.6376</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Gradient Boosting</b></td>
+      <td align="center">63.56%</td>
+      <td align="center">0.6361</td>
+      <td align="center">0.6354</td>
+      <td align="center">0.6350</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Logistic Regression</b></td>
+      <td align="center">61.86%</td>
+      <td align="center">0.6186</td>
+      <td align="center">0.6186</td>
+      <td align="center">0.6186</td>
+    </tr>
+    <tr>
+      <td align="center"><b>MLP</b></td>
+      <td align="center">61.72%</td>
+      <td align="center">0.6174</td>
+      <td align="center">0.6171</td>
+      <td align="center">0.6170</td>
+    </tr>
+    <tr>
+      <td align="center"><b>RBF SVM</b></td>
+      <td align="center">61.16%</td>
+      <td align="center">0.6116</td>
+      <td align="center">0.6116</td>
+      <td align="center">0.6116</td>
+    </tr>
+    <tr>
+      <td align="center"><b>Decision Tree</b></td>
+      <td align="center">57.77%</td>
+      <td align="center">0.5780</td>
+      <td align="center">0.5774</td>
+      <td align="center">0.5768</td>
+    </tr>
+    <tr>
+      <td align="center"><b>k-NN</b></td>
+      <td align="center">57.20%</td>
+      <td align="center">0.5738</td>
+      <td align="center">0.5724</td>
+      <td align="center">0.5701</td>
+    </tr>
+    <tr>
       <td align="center"><b>Hybrid ST-GNN</b></td>
       <td align="center">50.99%</td>
       <td align="center">0.5100</td>
