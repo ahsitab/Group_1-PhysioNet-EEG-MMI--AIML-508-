@@ -86,9 +86,44 @@ These visualizations illustrate the data processing, model architectures, and tr
 
 </details>
 
-> ⚠️ *Note: **TASK-3** and **TASK-4** methodologies and results will be uploaded in subsequent updates.*
+> ⚠️ *Note: **TASK-4** methodologies and results will be uploaded in subsequent updates.*
 
 ---
+
+## 🚀 TASK-3: Advanced Modeling, Interpretability & Robustness
+
+### 🧠 Task 3 Summary
+Building on **Task 2** (where we established our baseline classification using 1D-CNN and an initial Hybrid ST-GNN), **Task 3** introduces a highly optimized **Laterality-Aware ST-GNN**. 
+To ensure our model's robustness and generalizability, we implemented rigorous Out-Of-Fold (OOF) cross-validation. We also conducted an **Ablation Study** to validate the architectural choices of our network. Finally, to make our complex models transparent, we integrated **LIME** and **SHAP** for interpretability, allowing us to explain the predictions based on the EEG data.
+
+### 🖼️ Interpretability & Evaluation Visual Insights (Task 3)
+These visualizations highlight the robustness of our models through cross-validation, component importance via ablation studies, and model interpretability.
+
+<details open>
+<summary><b>View Visualizations</b></summary>
+<br>
+
+| **Laterality-Aware ST-GNN Architecture** | **CV Macro F1 Comparison** |
+| :---: | :---: |
+| <img src="images/Task3/task3_stgnn_architecture.png" alt="ST-GNN Architecture" width="400"/> | <img src="images/Task3/task3_cv_macro_f1_comparison.png" alt="CV Macro F1 Comparison" width="400"/> |
+
+| **OOF Confusion: Laterality-Aware ST-GNN** | **Ablation Study (Macro F1)** |
+| :---: | :---: |
+| <img src="images/Task3/task3_oof_confusion_task_3_laterality_aware_st_gnn.png" alt="Laterality-Aware ST-GNN Confusion Matrix" width="400"/> | <img src="images/Task3/task3_ablation_macro_f1.png" alt="Ablation Study Macro F1" width="400"/> |
+
+| **SHAP Correct Prediction** | **SHAP Wrong Prediction** |
+| :---: | :---: |
+| <img src="images/Task3/task3_shap_correct_prediction.png" alt="SHAP Correct Prediction" width="400"/> | <img src="images/Task3/task3_shap_wrong_prediction.png" alt="SHAP Wrong Prediction" width="400"/> |
+
+| **LIME Correct Prediction** | **LIME Wrong Prediction** |
+| :---: | :---: |
+| <img src="images/Task3/task3_lime_correct_prediction.png" alt="LIME Correct Prediction" width="400"/> | <img src="images/Task3/task3_lime_wrong_prediction.png" alt="LIME Wrong Prediction" width="400"/> |
+
+| **OOF Confusion: 1D CNN** | **OOF Confusion: First Hybrid ST-GNN** |
+| :---: | :---: |
+| <img src="images/Task3/task3_oof_confusion_1d_cnn.png" alt="1D CNN Confusion Matrix" width="400"/> | <img src="images/Task3/task3_oof_confusion_first_hybrid_st_gnn.png" alt="First Hybrid ST-GNN Confusion Matrix" width="400"/> |
+
+</details>
 
 ## 💻 How to Run
 All execution scripts, models, and notebooks are located in the `code/`, `models/`, and `report/` directories. Navigate to specific task folders to reproduce our findings.
@@ -96,6 +131,9 @@ All execution scripts, models, and notebooks are located in the `code/`, `models
 ```bash
 # Example for running EDA (Task 1)
 jupyter notebook code/task1/Group01_PhysioNet_EEG_MMI_task1_eda.ipynb
+
+# Example for running Advanced Modeling (Task 3)
+jupyter notebook code/task3/group01-physionet-eeg-mmi-task3-ipynb.ipynb
 ```
 
 ---
